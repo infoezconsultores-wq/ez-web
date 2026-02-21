@@ -145,11 +145,11 @@
     
     <div class="mt-10 flex justify-center">
         <a href="mailto:contacto@ezconsultores.cl
-        ?subject=Solicitud%20de%20evaluación%20inicial%20-%20Mercado%20Público
-        &body=Hola%20E%26Z%20Consultores,%0D%0A%0D%0AEstoy%20interesado%20en%20agendar%20una%20evaluación%20inicial%20para%20analizar%20oportunidades%20en%20Mercado%20Público.%0D%0A%0D%0AEmpresa:%0D%0ARubro:%0D%0ARegión:%0D%0A%0D%0AQuedo%20atento.%0D%0A%0D%0ASaludos,"
-       class="px-10 py-4 bg-navy text-white text-xs uppercase tracking-[0.2em] font-medium hover:opacity-90 transition-all">
+        ?subject=Solicitud%20de%20evaluación%20inicial%20-%20E%26Z%20Consultores
+        &body=Hola%20E%26Z%20Consultores,%0D%0A%0D%0AMe%20interesa%20agendar%20una%20evaluación%20inicial%20para%20analizar%20oportunidades%20en%20Mercado%20Público.%0D%0A%0D%0ANombre:%0D%0AEmpresa:%0D%0ARubro:%0D%0A%0D%0AQuedo%20atento%20a%20su%20confirmación.%0D%0A%0D%0ASaludos,"
+        class="px-10 py-4 bg-navy text-white text-xs uppercase tracking-[0.2em] font-medium hover:opacity-90 transition-all">
         Agendar evaluación gratuita
-    </a>
+        </a>
 </div>
 
 </header>
@@ -387,6 +387,22 @@
     </div>
   </div>
 </footer>
+
+<script>
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  // Cerrar menú al hacer click en un link (recomendado)
+  document.querySelectorAll(".mobile-link").forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.add("hidden");
+    });
+  });
+</script>
 
 </body>
 </html>
