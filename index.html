@@ -150,13 +150,13 @@
 
     <!-- BOTÓN CTA PRINCIPAL -->
     
-    <div class="mt-10 flex justify-center">
+    <div class="mt-10 w-full px-6 sm:px-0 flex justify-center">
         <a href="mailto:contacto@ezconsultores.cl?subject=Solicitud%20de%20evaluacion%20inicial%20-%20E%26Z%20Consultores&body=Hola,%0D%0A%0D%0AMe%20interesa%20agendar%20una%20evaluacion%20inicial%20para%20analizar%20oportunidades%20en%20Mercado%20Publico.%0D%0A%0D%0ANombre:%0D%0AEmpresa:%0D%0ARubro:%0D%0A%0D%0AQuedo%20atento%20a%20su%20confirmacion.%0D%0A%0D%0ASaludos,"
-        class="px-10 py-4 bg-navy text-white text-xs uppercase tracking-[0.2em] font-medium hover:opacity-90 transition-all">
-        Agendar evaluación gratuita
+        class="w-full max-w-xs sm:w-auto px-8 py-4 bg-navy text-white text-xs uppercase tracking-[0.2em] font-medium text-center hover:opacity-90 transition-all">
+            <span class="sm:hidden">Agendar diagnostico</span>
+            <span class="hidden sm:inline">Agendar diagnostico</span>
         </a>
-</div>
-
+    </div>
 </header>
 
     <!-- SECCIÓN 2: EL ESCENARIO ACTUAL -->
@@ -216,10 +216,10 @@
             
             <div class="grid md:grid-cols-2 gap-16">
                 <!-- Evelyn -->
-                <div class="border-l border-gold/30 pl-8 group">
+                <div class="border-l border-gold/30 pl-8 group flex flex-col h-full">
                     <h3 class="text-2xl mb-4 text-gold transition-all group-hover:pl-2">Evelyn Zepeda</h3>
                     <p class="text-slate-300 leading-relaxed text-sm">Cuenta con más de 10 años de experiencia en departamentos de adquisiciones, desempeñándose como supervisor de Mercado Público y con formación especializada en compras públicas.</p>
-                    <div class="mt-6">
+                    <div class="mt-auto pt-6">
                         <a href="https://www.linkedin.com/in/evelynzepedan/"
                            target="_blank"
                            rel="noopener noreferrer"
@@ -234,10 +234,10 @@
                     </div>
                 </div>
                 <!-- Sebastián -->
-                <div class="border-l border-gold/30 pl-8 group">
+                <div class="border-l border-gold/30 pl-8 group flex flex-col h-full">
                     <h3 class="text-2xl mb-4 text-gold transition-all group-hover:pl-2">Sebastián Gómez</h3>
                     <p class="text-slate-300 leading-relaxed text-sm">Cuenta con experiencia en compras públicas, participando en proyectos de adquisición de mayor complejidad y envergadura desde el rol de comprador.</p>
-                    <div class="mt-6">
+                    <div class="mt-auto pt-6">
                         <a href="https://www.linkedin.com/in/sbgoar/"
                            target="_blank"
                            rel="noopener noreferrer"
@@ -260,7 +260,6 @@
             </div>
         </div>
     </section>
-
     <!-- SECCIÓN 5: PLANES DE SERVICIO -->
     <section id="planes" class="section-padding bg-white">
         <div class="max-w-6xl mx-auto px-6 text-center">
@@ -269,55 +268,70 @@
                 <p class="text-slate-500 max-w-2xl mx-auto">Ofrecemos dos niveles de servicio, según el grado de profundidad y acompañamiento que requiera cada empresa.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
-                <!-- Plan Estándar -->
-                <div class="p-12 border border-slate-100 bg-slate-50/50 rounded-sm">
-                    <h3 class="text-xl font-medium mb-8 uppercase tracking-widest">Plan Estándar</h3>
-                    <ul class="space-y-6 text-sm text-slate-600">
-                        <li>Postulaciones con capacidad limitada</li>
-                        <li>Reportes periódicos de oportunidades</li>
-                        <li>Evaluación y apoyo en la toma de decisiones</li>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16 text-left">
+                <div class="p-10 border border-slate-100 bg-slate-50/50 rounded-sm">
+                    <h3 class="text-xl font-medium mb-4 uppercase tracking-widest">Plan Estándar</h3>
+                    <p class="text-sm text-slate-600 mb-6">Pensado para empresas que buscan participar en Mercado Público con criterio, estructura y mayor probabilidad de éxito.</p>
+                    <h4 class="text-xs uppercase tracking-[0.2em] text-slate-500 font-semibold mb-4">Incluye</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• Diagnóstico inicial y sesión estratégica.</li>
+                        <li>• Definición de foco comercial y criterios de participación.</li>
+                        <li>• Reportes de oportunidades relevantes (martes y jueves).</li>
+                        <li>• Evaluación técnica de procesos priorizados.</li>
+                        <li>• Revisión documental antes de la postulación.</li>
+                        <li>• Acompañamiento en la preparación de la oferta.</li>
+                        <li>• Seguimiento del estado del proceso.</li>
+                        <li>• Retroalimentación técnica en caso de no adjudicación.</li>
                     </ul>
+                    <div class="mt-8 pt-6 border-t border-slate-200">
+                        <h4 class="text-xs uppercase tracking-[0.2em] text-slate-500 font-semibold mb-2">Enfoque</h4>
+                        <p class="text-sm text-slate-700">Ordenar la participación en Mercado Público y mejorar la calidad de postulación.</p>
+                    </div>
                 </div>
-                <!-- Plan Ejecutivo -->
-                <div class="p-12 border border-gold/20 bg-white rounded-sm relative overflow-hidden">
+
+                <div class="p-10 border border-gold/20 bg-white rounded-sm relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-16 h-16 bg-gold/5 rotate-45 translate-x-8 -translate-y-8"></div>
-                    <h3 class="text-xl font-medium mb-8 uppercase tracking-widest">Plan Ejecutivo</h3>
-                    <ul class="space-y-6 text-sm text-slate-600">
-                        <li>Postulaciones sin límite</li>
-                        <li>Reportes personalizados diarios</li>
-                        <li>Acompañamiento permanente y seguimiento activo</li>
+                    <h3 class="text-xl font-medium mb-4 uppercase tracking-widest">Plan Ejecutivo</h3>
+                    <p class="text-sm text-slate-600 mb-6">Diseñado para empresas que buscan convertir Mercado Público en un canal estratégico de crecimiento.</p>
+                    <h4 class="text-xs uppercase tracking-[0.2em] text-slate-500 font-semibold mb-4">Incluye todo el Plan Estratégico, más</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li>• Reportes personalizados diarios (lunes a viernes).</li>
+                        <li>• Reunión semanal de estrategia comercial (30-45 minutos).</li>
+                        <li>• Optimización estructural de postulaciones.</li>
+                        <li>• Asesoría en formulación de requerimientos técnicos.</li>
+                        <li>• Estrategia de posicionamiento frente a compradores públicos.</li>
+                        <li>• Acompañamiento activo durante aclaraciones.</li>
+                        <li>• Canal directo vía WhatsApp para consultas prioritarias.</li>
                     </ul>
+                    <div class="mt-8 pt-6 border-t border-slate-200">
+                        <h4 class="text-xs uppercase tracking-[0.2em] text-slate-500 font-semibold mb-2">Enfoque</h4>
+                        <p class="text-sm text-slate-700">Transformar la participación en Mercado Público en una estrategia comercial sostenida y competitiva.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Servicios comunes (NUEVA PARTE) -->
             <div class="max-w-4xl mx-auto mb-16 pt-12 border-t border-slate-100">
                 <h4 class="text-[10px] uppercase tracking-[0.3em] text-slate-400 font-bold mb-10">Incluido en ambos planes</h4>
-                <div class="grid md:grid-cols-2 gap-x-12 gap-y-6 text-left max-w-3xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-x-12 gap-y-6 text-left max-w-4xl mx-auto">
                     <div class="flex items-start gap-3">
                         <svg class="w-4 h-4 text-gold mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-sm text-slate-600">Análisis de licitaciones y compras ágiles relevantes</span>
+                        <span class="text-sm text-slate-600">Análisis estratégico de licitaciones y compras ágiles.</span>
                     </div>
                     <div class="flex items-start gap-3">
                         <svg class="w-4 h-4 text-gold mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-sm text-slate-600">Acompañamiento en la toma de decisiones</span>
+                        <span class="text-sm text-slate-600">Acompañamiento en la toma de decisiones.</span>
                     </div>
                     <div class="flex items-start gap-3">
                         <svg class="w-4 h-4 text-gold mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-sm text-slate-600">Seguimiento posterior a la postulación</span>
+                        <span class="text-sm text-slate-600">Evaluación de criterios de admisibilidad.</span>
                     </div>
                     <div class="flex items-start gap-3">
                         <svg class="w-4 h-4 text-gold mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-sm text-slate-600">Asesoría en aclaraciones de oferta</span>
+                        <span class="text-sm text-slate-600">Seguimiento posterior a la postulación.</span>
                     </div>
-                    <div class="flex items-start gap-3">
+                    <div class="flex items-start gap-3 md:col-span-2">
                         <svg class="w-4 h-4 text-gold mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-sm text-slate-600">Seguimiento del estado del proceso</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <svg class="w-4 h-4 text-gold mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-sm text-slate-600">Retroalimentación en caso de no adjudicación</span>
+                        <span class="text-sm text-slate-600">Confidencialidad y tratamiento reservado de la información.</span>
                     </div>
                 </div>
             </div>
